@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://webfontworld.github.io/cookierun/CookieRun.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d68045e863.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./00_index/index.css">
+    <link rel="stylesheet" href="./css/01_notice.css">
+    <link rel="stylesheet" href="./css/01_notice_content.css">
+    <link rel="stylesheet" href="./css/02_rogin.css">
+    <link rel="stylesheet" href="./css/03_cookie_item.css">
+    <link rel="stylesheet" href="./css/04_cookie_product.css">
+    <link rel="stylesheet" href="./css/05_cookie_freeboard.css">
+    <link rel="stylesheet" href="./css/06_cookie_freeboard_content.css">
+    <script  defer src="./00_index/index.js"></script>
+    <script defer>
+
+    </script>
+    <title>쿠키런 | 쿠키런</title>
+</head>
+<body>
+    <header>
+        <div id="backBtn">뒤로<br>가기<ul>
+        </ul></div>
+        <div id="nav_bg"></div>
+        <nav>
+            <div class="header_top container">
+                <div class="header_logo">
+                    <h1>쿠키런</h1>
+                    <img onclick="indexWrite(event)" src="https://www.devsisters.com/_next/image?url=%2Fimage%2Fhome%2Fourgames-kingdom-logo.png&w=640&q=75" alt="">
+                </div>
+                <ul>
+                    <li class="notice_1" onclick="noticeWrite(event)">새소식
+                        <ul class="sub_li">
+                            <li class="notice_1" onclick="noticeWrite(event)">공지사항</li>
+                            <li class="notice_2">업데이트</li>
+                            <li class="notice_3">이벤트</li>
+                        </ul>
+                    </li>
+                    <li class="game_1" onclick="cookieinfoWrite(event)">게임정보
+                        <ul class="sub_li">
+                            <li class="game_1" onclick="cookieinfoWrite(event)">쿠키 소개</li>
+                            <li class="game_2">게임 소개</li>
+                            <li class="game_3">쿠키 월드 소개</li>
+                        </ul>
+                    </li>
+                    <li onclick="comunityWrite(notistart, notiend)" class="comunity_1">커뮤니티
+                        <ul class="sub_li">
+                            <li onclick="(event)=>{ if(event.stopPropagation())event.stopPropagation();
+                                comunityWrite(notistart, notiend) }"  class="comunity_1">자유 게시판</li>
+                        </ul>
+                    </li>
+                    <li class="media_1">미디어
+                        <ul class="sub_li">
+                            <li class="media_1">영상</li>
+                            <li class="media_2">아트워크</li>
+                        </ul>
+                    </li>
+                    <li onclick="shopWrite(event)" class="shop_1">SHOP
+                        <ul class="sub_li">
+                            <li onclick="shopWrite(event)" class="shop_1">온라인 굿즈샵</li>
+                        </ul>
+                    </li>
+                    <li><a href="./06_as/01_as.html">고객센터</a>
+                        <ul class="sub_li">
+                            <li><a href="./06_as/01_as.html">고객센터</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header_cookie">
+                <img id="header_cookie" src="https://i.pinimg.com/originals/5e/a7/82/5ea782dee1243d13f4fcdedf96cb4c4d.gif" alt="">
+        </div>
+    </header>
+    <div id="indexBox">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+
+.notice_option{
+    height: 100px;
+    display: flex;
+    align-items: end;
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+
+.notice_option>h3{
+    font-size: xx-large;
+}
+.backList{
+    position: absolute;
+    right: 0;
+
+    font-size: large;
+
+    width: 100px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    border: 1px solid rgb(207, 199, 199);
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+}
+
+.backList:hover{
+    background-color: rgb(207, 199, 199);;
+}
+
+.backList::before{
+    content: '\f03a';
+    font: var(--fa-font-solid);
+
+    margin-right: 5px;
+}
+
+.notice_option_right{
+    display: flex;
+    position: absolute;
+    right: 0;
+
+    margin-bottom: 5px;
+}
+
+.list_sort{
+    padding: 22px 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    text-decoration: none;
+
+    
+}
+
+.list_sort>span{
+    display: inline-block;
+    
+    width: 70px;
+    height: 30px;
+    
+    text-align: center;
+    line-height: 30px;
+    
+    cursor: pointer;
+}
+
+.list_sort>span:hover{
+    background-color: antiquewhite;
+}
+
+.list_sort>:first-child::before{
+    content: '\f00c';
+    font: var(--fa-font-solid);
+
+    margin-right: 2px;
+}
+
+
+.list_sort>:last-child{
+    margin-left: 10px;
+
+}
+.list_sort>:last-child::before{
+    content: '\f00c';
+    font: var(--fa-font-solid);
+
+
+}
+
+.list_notice{
+
+    display: grid;
+
+    grid-template: 70px / .5fr 5fr 1fr;
+
+    background-color: #F9F9F9;
+    border-top: 1px solid #e0d4d4;
+    border-bottom: 1px solid #e0d4d4;
+
+    text-decoration: none;
+    color: black;
+}
+
+.list_freeboard{
+
+    display: grid;
+
+    grid-template: 70px / 5fr 1fr .5fr .5fr 1fr;
+    
+    text-decoration: none;
+}
+
+
+/*==============================*/
+.notice_ss{
+    display: flex;
+    width: 70px;
+    height: 35px;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: small;
+}
+
+.notice_ss::after{
+    content: '공지';
+
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    text-align: center;
+
+    line-height: 35px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.notice_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 0px 10px 10px;
+
+    border-top: 1px solid #e0d4d4;
+}
+
+.notice_subject_ss{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    padding: 3px 10px 7px 30px;
+
+    border-top: 1px solid #e0d4d4;
+}
+
+.notice_date_ss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 0px 10px 10px;
+
+    border-top: 1px solid #e0d4d4;
+}
+
+/*==============================*/
+
+
+
+.freeboard_subject{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    list-style: none;
+    text-decoration: none;
+    color: rgb(43, 37, 37);
+
+    padding: 3px 10px 7px 30px;
+    
+
+    border-bottom: 1px solid #e0d4d4;
+}
+.freeboard_subject:hover{
+    text-decoration: underline;
+}
+
+.userInfo, .heart, .read, .freeboard_date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    text-decoration: none;
+
+    padding: 3px 10px 7px 15px;
+
+    border-bottom: 1px solid #e0d4d4;
+}
+
+.userInfo{
+    color: gray;
+    font-size: small;
+}
+.userInfo::before{
+    content: '';
+    
+    width: 14px;
+    height: 14px;
+    background-image: url("https://ssl.nexon.com/s2/game/maplestory/renewal/common/world_icon/icon_9.png");
+
+    margin-right: 3px;
+}
+
+.heart{
+    font-size: small;
+}
+
+.heart::before{
+    content: "\f004";
+    font: var(--fa-font-solid);
+
+    color: rgb(112, 112, 236);
+
+    margin-right: 4px;
+
+}
+
+.read{
+    font-size: small;
+}
+.read::before{
+    content: '\f06e';
+    font: var(--fa-font-solid);
+
+    margin-right: 4px;
+
+    opacity: .3;
+}
+
+.freeboard_date{
+    font-size: small;
+}
+
+.freeboard_date::before{
+    content: '\f4ad';
+    font: var(--fa-font-solid);
+
+    margin-right: 4px;
+
+    opacity: .5;
+}
+.list_notice:hover{
+    background-color: #F9F9F9;
+}
+
+.list_freeboard{
+    cursor: pointer;
+}
+
+.list_freeboard:hover{
+    background-color: #F9F9F9;
+}
+
+.footer{
+    height: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: black;
+    color: white;
+
+    width: 200px;
+    height: 50px;
+
+    margin-top: 5px;
+}
+
+.page{
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.other, .page>span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 1px;
+    border: 1px solid gray;
+    /* background-color: white; */
+
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+.default{
+    background-color: black;
+    color: white;
+}
+
+.page>span:hover{
+    background-color: black;
+    color: white;
+}
